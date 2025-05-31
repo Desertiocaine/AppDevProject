@@ -1,0 +1,168 @@
+[
+  {
+    "model": "library.author",
+    "pk": 1,
+    "fields": {
+      "name": "Aisling Ó Faoláin",
+      "bio": "Irish poet and novelist known for her evocative landscapes."
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 2,
+    "fields": {
+      "name": "Nguyễn Phúc An",
+      "bio": "Vietnamese historian and cultural researcher."
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 3,
+    "fields": {
+      "name": "Zubair al-Khalifa",
+      "bio": "Middle Eastern science fiction writer."
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 4,
+    "fields": {
+      "name": "Edda Björnsdóttir",
+      "bio": "Icelandic author of Nordic mysteries."
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "title": "Whispers of the Heather",
+      "author": 1,
+      "genre": "Poetry",
+      "isbn": "9781234567890",
+      "available_copies": 3
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "Dynasties of the Red River",
+      "author": 2,
+      "genre": "History",
+      "isbn": "9780987654321",
+      "available_copies": 2
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "Stars Over Basra",
+      "author": 3,
+      "genre": "Science Fiction",
+      "isbn": "9781122334455",
+      "available_copies": 4
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "Frost and Fire",
+      "author": 4,
+      "genre": "Mystery",
+      "isbn": "9785566778899",
+      "available_copies": 1
+    }
+  },
+  {
+    "model": "library.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$testhash$testhash",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tadeusz_zawadzki",
+      "first_name": "Tadeusz",
+      "last_name": "Zawadzki",
+      "email": "tadeusz.zawadzki@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-01T12:00:00Z",
+      "user_type": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "library.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$testhash$testhash", 
+      "last_login": null,
+      "is_superuser": false,
+      "username": "saanvi_rathore",
+      "first_name": "Saanvi",
+      "last_name": "Rathore",
+      "email": "saanvi.rathore@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-02T09:30:00Z",
+      "user_type": "member",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "library.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$testhash$testhash",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "yaretzi_montoya",
+      "first_name": "Yaretzi",
+      "last_name": "Montoya",
+      "email": "yaretzi.montoya@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-05-03T15:45:00Z",
+      "user_type": "admin",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "library.loan",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "book": 2,
+      "borrowed_at": "2024-05-10T10:00:00Z",
+      "due_date": "2024-06-10",
+      "returned": false
+    }
+  },
+  {
+    "model": "library.loan",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "book": 3,
+      "borrowed_at": "2024-05-12T14:30:00Z",
+      "due_date": "2024-06-12",
+      "returned": true
+    }
+  },
+  {
+    "model": "library.loan",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "book": 1,
+      "borrowed_at": "2024-05-15T08:15:00Z",
+      "due_date": "2024-06-15",
+      "returned": false
+    }
+  }
+]

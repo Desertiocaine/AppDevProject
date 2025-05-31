@@ -1,0 +1,40 @@
+For the project. A Library book Management System.
+Features:
+
+Four Database Tables:
+Books: Stores book information (title, author, genre, ISBN, etc.).
+Users: Stores user information (name, email, user type, etc.).
+Loans: Tracks which users have borrowed which books and due dates.
+Authors: Stores author information (name, bio, etc.).
+
+Two User Types:
+Admin: Can manage books, users, and authors.
+Member: Can view books, manage their own loans, and update profile information.
+
+CRUD Features:
+Full CRUD for Books by Admin.
+
+Linked Web Pages:
+Home Page: Overview of the system.
+Book List: View all books.
+Author List: View all authors.
+User Profile: View and edit user profile.
+Admin Dashboard: Manage books, authors, and users (for Admin only).
+
+Since we are required to split it up into particular jobs here is a breakdown:
+
+Team Member 1: Models & Database
+Define Django models for Books, Users, Loans, and Authors.
+Set up database migrations.
+
+Team Member 2: User Authentication & Permissions
+Implement user registration and authentication for Admin and Member.
+Set permissions for user actions based on user type.
+
+Team Member 3: CRUD Functionality for Books
+Implement the CRUD interface for Books.
+Create necessary forms and views.
+
+Team Member 4: Frontend and Routing
+Design and link webpages (Home, Book List, Author List, User Profile, Admin Dashboard).
+Implement basic styling using CSS or a framework like Bootstrap.
